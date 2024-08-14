@@ -1,0 +1,177 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body
+{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: aliceblue;
+}
+header
+{
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+ header nav
+{
+  width: 90%;
+  position: fixed;
+  background-color:black;
+  color: white;
+  display: flex;
+  align-items: center;
+  
+}
+header nav ul
+{
+  list-style: none;
+  display: flex;
+}
+header nav ul li
+{
+  margin: 0 15px;
+}
+header nav ul li a
+{
+  color:white;
+  text-decoration: none;
+  font-size: 16px;
+}
+header nav .contact-btn
+{
+  background-color: darkgrey;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+section#home
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  padding: 0 10%;
+}
+.intro
+{
+  max-width: 500px;
+}
+.intro h1
+{
+  font-size: 48px;
+}
+.intro .role
+{
+ font-size: 24px;
+}
+.intro .btn
+{
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.photo img
+{
+  border-radius: 90%;
+  width: 250px;
+  height: 250px; 
+  object-fit: cover;
+  border: 5px solid black;
+}
+section#about,section#contact
+{
+ padding: 50px 10%;
+ text-align:center ;
+}
+section#abouth2,section#contacth2
+{
+ font-size: 36px;
+ margin-bottom: 20px;
+}
+form input, form textarea
+{
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+form button
+{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#Education">Education</a></li>
+            </ul>
+            <a href="#Contact" class="contact-btn">Contact Me</a>
+        </nav>
+        <br>
+    </header>
+    <section id="home">
+        <div class="intro">
+            <div class="content">
+                <p class="subtitle" >Hi!</p>
+                <br>
+                <h1 class="title">I'm <span class="highlight"> Payal Jajoriya<br>a  </span>B.tech student from Information Technology branch 2nd year.</h1>
+                <br>
+                <p class="Description">Welcome to my student Portfolio! I am Payal Jajoriya from Jaipur Rajasthan. I am B.tech student from Information technology branch 2nd year.</p>
+                <div class="action__btns">
+                    <button class="Portfolio">Portfolio</button> <br>
+                </div>
+            </div>
+            <br>
+            <div class="img">
+                <img src="WhatsApp Image 2024-04-18 at 19.26.30 (3).jpeg" alt="profile" width="250px" height="250px" border- radius="90%" object-fit="cover" border="5px solid black">
+               
+            </div>
+        </div>
+    </section> 
+    <br>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hi I'm Payal Jajoriya from Jaipur Rajasthan. I'm B.tech student from Information Technology branch 2nd year. My institute name is Rajasthan institute of engineering and Technology.</p>
+    </section> 
+    <section id="education">
+      <h2>Education</h2>
+      <p>I passes 10th class from Alpha International Academy school.I got 80% in my 10th class.</p>
+      <p>I passes 12th class from Alpha International Academy school.I got 70% in my 12th class.</p>
+    </section>
+    <section id="Experience">
+      <h2>Experience</h2>
+      <p>I'm Fresher.</p>
+    </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="#">
+        <input type="text" placeholder="Your name" required><br>
+        <br>
+        <input type="Email" placeholder="Email" required><br>
+        <br>
+        <input type="Phone no." placeholder="Phone no." required><br>
+        <br>
+        <textarea Placeholder="Your Message" required></textarea><br>
+        <br>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+</body>
+</html>
